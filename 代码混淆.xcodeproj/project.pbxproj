@@ -16,6 +16,9 @@
 		A260167E23A241E000C234CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A260167D23A241E000C234CC /* main.m */; };
 		A260168823A241E000C234CC /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A260168723A241E000C234CC /* ____Tests.m */; };
 		A260169323A241E000C234CC /* ____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A260169223A241E000C234CC /* ____UITests.m */; };
+		A26016A223A241FF00C234CC /* LSPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A26016A123A241FF00C234CC /* LSPerson.m */; };
+		A26016AA23A24AD200C234CC /* MJEncryptString.m in Sources */ = {isa = PBXBuildFile; fileRef = A26016A723A24AD100C234CC /* MJEncryptString.m */; };
+		A26016AB23A24AD200C234CC /* MJEncryptStringData.m in Sources */ = {isa = PBXBuildFile; fileRef = A26016A823A24AD100C234CC /* MJEncryptStringData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,14 @@
 		A260168E23A241E000C234CC /* 代码混淆UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "代码混淆UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A260169223A241E000C234CC /* ____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____UITests.m"; sourceTree = "<group>"; };
 		A260169423A241E000C234CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26016A023A241FF00C234CC /* LSPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSPerson.h; sourceTree = "<group>"; };
+		A26016A123A241FF00C234CC /* LSPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSPerson.m; sourceTree = "<group>"; };
+		A26016A323A2431300C234CC /* MJCodeObfuscation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJCodeObfuscation.h; sourceTree = "<group>"; };
+		A26016A423A2434400C234CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A26016A623A24AD100C234CC /* MJEncryptStringData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJEncryptStringData.h; sourceTree = "<group>"; };
+		A26016A723A24AD100C234CC /* MJEncryptString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJEncryptString.m; sourceTree = "<group>"; };
+		A26016A823A24AD100C234CC /* MJEncryptStringData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJEncryptStringData.m; sourceTree = "<group>"; };
+		A26016A923A24AD100C234CC /* MJEncryptString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJEncryptString.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +115,22 @@
 		A260166A23A241D500C234CC /* 代码混淆 */ = {
 			isa = PBXGroup;
 			children = (
+				A26016A523A24AD100C234CC /* MJEncryptString */,
+				A26016A323A2431300C234CC /* MJCodeObfuscation.h */,
 				A260166B23A241D500C234CC /* AppDelegate.h */,
 				A260166C23A241D500C234CC /* AppDelegate.m */,
 				A260166E23A241D500C234CC /* SceneDelegate.h */,
 				A260166F23A241D500C234CC /* SceneDelegate.m */,
 				A260167123A241D500C234CC /* ViewController.h */,
 				A260167223A241D500C234CC /* ViewController.m */,
+				A26016A023A241FF00C234CC /* LSPerson.h */,
+				A26016A123A241FF00C234CC /* LSPerson.m */,
 				A260167423A241D500C234CC /* Main.storyboard */,
 				A260167723A241E000C234CC /* Assets.xcassets */,
 				A260167923A241E000C234CC /* LaunchScreen.storyboard */,
 				A260167C23A241E000C234CC /* Info.plist */,
 				A260167D23A241E000C234CC /* main.m */,
+				A26016A423A2434400C234CC /* PrefixHeader.pch */,
 			);
 			path = "代码混淆";
 			sourceTree = "<group>";
@@ -135,6 +151,17 @@
 				A260169423A241E000C234CC /* Info.plist */,
 			);
 			path = "代码混淆UITests";
+			sourceTree = "<group>";
+		};
+		A26016A523A24AD100C234CC /* MJEncryptString */ = {
+			isa = PBXGroup;
+			children = (
+				A26016A923A24AD100C234CC /* MJEncryptString.h */,
+				A26016A723A24AD100C234CC /* MJEncryptString.m */,
+				A26016A623A24AD100C234CC /* MJEncryptStringData.h */,
+				A26016A823A24AD100C234CC /* MJEncryptStringData.m */,
+			);
+			path = MJEncryptString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A260167323A241D500C234CC /* ViewController.m in Sources */,
+				A26016AB23A24AD200C234CC /* MJEncryptStringData.m in Sources */,
+				A26016AA23A24AD200C234CC /* MJEncryptString.m in Sources */,
+				A26016A223A241FF00C234CC /* LSPerson.m in Sources */,
 				A260166D23A241D500C234CC /* AppDelegate.m in Sources */,
 				A260167E23A241E000C234CC /* main.m in Sources */,
 				A260167023A241D500C234CC /* SceneDelegate.m in Sources */,
@@ -441,7 +471,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8ETH5Y5NB;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/代码混淆/PrefixHeader.pch";
 				INFOPLIST_FILE = "代码混淆/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +490,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K8ETH5Y5NB;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/代码混淆/PrefixHeader.pch";
 				INFOPLIST_FILE = "代码混淆/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

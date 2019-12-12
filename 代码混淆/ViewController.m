@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "LSPerson.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor greenColor];
+    
+    
+    LSPerson * p = [LSPerson new];
+    [p ls_eat];
+    
+    NSLog(@"\n");
+    NSLog(@"类名：%@", [p class]);
+    
+    // 对字符串进行加密
+    NSString * str = mj_OCString(_3437883236);
+    NSLog(@"实际字符串m：%@", str);
 }
 
 
